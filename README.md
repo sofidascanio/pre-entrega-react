@@ -8,4 +8,4 @@ Para instalar local:
     npm run dev # para correr aplicacion
 ```
 
-Pagina: [Netlify](https://lucent-strudel-6e7f88.netlify.app/)
+Pagina: [Netlify](https://estilo-tienda.netlify.app/)
