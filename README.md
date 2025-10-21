@@ -3,6 +3,7 @@
 
 Para instalar local:
 ``` bash
+    cd pre-entrega-react
     npm install # para instalar dependencias
     npm run dev # para correr aplicacion
 ```
