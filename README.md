@@ -1,4 +1,4 @@
-# Pre-Entrega - Curso React JS
+# Entrega - Curso React JS
 ## Ecommerce
 
 Para instalar local:
