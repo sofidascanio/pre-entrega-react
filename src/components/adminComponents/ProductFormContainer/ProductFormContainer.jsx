@@ -17,7 +17,7 @@ export const ProductFormContainer = () => {
     });
 
     const handleChange = (e) => {
-        const { name, target } = e.target;
+        const { name, value } = e.target;
         setProduct({...product, [name]: value});
     }
 

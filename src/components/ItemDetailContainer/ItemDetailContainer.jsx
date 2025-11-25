@@ -2,6 +2,7 @@ import "./ItemDetailContainer.css"
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { getProductById } from "../../services/products";
 
 
 export const ItemDetailContainer = () => {
@@ -10,22 +11,8 @@ export const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch("/data/products.json")
-            .then((response) => {
-                if(!response.ok) {
-                    throw new Error("No se encontro el producto");
-                }
-
-                return response.json();
-            })
-            .then((data) => {
-                const found = data.find(product => product.id === id);
-                if (found) {
-                    setDetail(found); 
-                } else {
-                    throw new Error("Producto no encontrado");
-                }
-            })
+        getProductById(id)
+            .then((detail) => setDetail(detail))
             .catch(() => {});
     }, [id]);
 

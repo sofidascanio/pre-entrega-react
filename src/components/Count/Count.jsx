@@ -9,7 +9,7 @@ export const Count = ({ btnText, onConfirm }) => {
     }
 
     const decrement = () => {
-        setCount((prev) => (pre > 0 ? prev - 1 : 0));
+        setCount((prev) => (prev > 0 ? prev - 1 : 0));
     }
 
     const confirm = () => {
